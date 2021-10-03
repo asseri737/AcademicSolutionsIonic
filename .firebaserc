@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "academic-solution-42c2e": {
+      "hosting": {
+        "app": [
+          "academic-solution-42c2e"
+        ]
+      }
+    }
+  }
+}

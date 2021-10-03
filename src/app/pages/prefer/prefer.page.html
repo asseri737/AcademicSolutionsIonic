@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar ccolor="success">
+    <ion-title>preference</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="signOut()">
+        <ion-icon name="log-out" slot="icon-only" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+  <ion-card (click)="toChat()" >
+  
+  
+    <ion-card-content>
+      <ion-icon name="chatbubbles-outline" ></ion-icon>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card (click)="toBot()">
+  
+  
+    <ion-card-content>
+      <ion-icon name="logo-reddit"></ion-icon>
+    <br>
+      Chat with Chatbot
+    </ion-card-content>
+  </ion-card>
+
+
+</div>
+
+
+</ion-content>
