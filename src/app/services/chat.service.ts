@@ -30,22 +30,6 @@ export class ChatService {
     });
   }
 
-  async signup({ email, password }): Promise<any> {
-    const credential = await this.afAuth.createUserWithEmailAndPassword(
-      email,
-      password
-    );
-
-    const uid = credential.user.uid;
-
-    return this.afs.doc(
-      `users/${uid}`
-    ).set({
-      uid,
-      email: credential.user.email,
-    });
-  }
-
   signIn({ email, password }) {
     return this.afAuth.signInWithEmailAndPassword(email, password);
   }
@@ -58,6 +42,7 @@ addChatMessage(msg) {
   return this.afs.collection('messages').add({
     msg,
     from: this.currentUser.uid,
+    createdAt:Date.now
   });
 }
 

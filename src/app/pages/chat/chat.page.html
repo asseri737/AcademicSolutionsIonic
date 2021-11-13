@@ -5,10 +5,13 @@
       <ion-button fill="clear" (click)="signOut()">
         <ion-icon name="log-out" slot="icon-only"></ion-icon>
       </ion-button>
-      <ion-buttons slot="start">
-        <ion-back-button (click)="toPrefer()" color="primary"></ion-back-button>
-      </ion-buttons>
+
     </ion-buttons>
+
+      <ion-buttons slot="start">
+        <ion-back-button (click)="toPrefer()" color="light"></ion-back-button>
+
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
  
@@ -22,7 +25,7 @@
         <b>{{ message.fromName }}</b><br>
         <span>{{ message.msg }}
         </span>
-        <div class="time ion-text-right"><br>{{ message.createdAt?.toMillis() | date:'short' }}</div>
+        <div class="time ion-text-right"><br>{{ message.createdAt | date:'short' }}</div>
       </ion-col>
     </ion-row>
   </ion-grid>

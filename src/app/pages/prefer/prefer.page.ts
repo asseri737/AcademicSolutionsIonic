@@ -17,7 +17,7 @@ export class PreferPage implements OnInit {
 
 
   toChat(){
-    this.router.navigateByUrl('/chat');
+    this.router.navigateByUrl('/chat/mohsin');
   }
   toBot(){
     this.router.navigateByUrl('/bot');

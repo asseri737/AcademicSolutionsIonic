@@ -1,21 +1,22 @@
 
  
-<ion-content class="ion-padding">
+<ion-content class="background">
  
 <ion-item>
-<img src="assets/pics/logo_2.png" class="logo"alt="why" height="300px" width="400px" style="padding: 20px;">
+<img src="assets/pics/logo_2.png" class="logo"alt="why" height="250px" width="250px" style="padding: 20px;">
 
 </ion-item>
 
 
-
+<div class="loginForm">
   <form [formGroup]="credentialForm">
-    <ion-item>
+    <ion-item class="email">
       <ion-input
         placeholder="Email address"
         formControlName="email"
         autofocus="true"
         clearInput="true"
+        id="eemail"
       ></ion-input>
     </ion-item>
     <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
@@ -23,7 +24,7 @@
       <span *ngIf="email.errors?.email">Email is invalid</span>
     </div>
  
-    <ion-item>
+    <ion-item class="password">
       <ion-input
       placeholder="Password"
       type="password"
@@ -35,8 +36,9 @@
       <span *ngIf="password.errors?.required">Password is required</span>
       <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
     </div>
+    <button (click)="signIn()" >Sing in</button>
+
   </form>
- 
-    <ion-button (click)="signIn()" expand="full" color="success">Sing in</ion-button>
+</div>
  
 </ion-content>

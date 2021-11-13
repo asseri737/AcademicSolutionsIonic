@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar ccolor="success">
+    <ion-title>Contacts</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="signOut()">
+        <ion-icon name="log-out" slot="icon-only" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-list >
+    <ion-item button *ngFor="let contact of contacts" routerLink="/chat/{{contact.name}}">
+      <ion-avatar>
+        <ion-img [src]="contact.imgUri"></ion-img>
+      </ion-avatar>
+      <h1>
+      {{ contact.name }}</h1>
+    </ion-item>
+  </ion-list>
+</ion-content>

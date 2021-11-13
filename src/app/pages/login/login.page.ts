@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -19,48 +20,38 @@ export class LoginPage implements OnInit {
     private alertController: AlertController,
     private loadingController: LoadingController,
     private chatService: ChatService
-  ) {}
+  ) {
+
+  }
 
   ngOnInit() {
     this.credentialForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
+
   }
 
-  async signUp() {
-    const loading = await this.loadingController.create();
-    await loading.present();
-    this.chatService
-      .signup(this.credentialForm.value)
-      .then(
-        (user) => {
-          loading.dismiss();
-          this.router.navigateByUrl('/chat', { replaceUrl: true });
-        },
-        async (err) => {
-          loading.dismiss();
-          const alert = await this.alertController.create({
-            header: 'Sign up failed',
-            message: err.message,
-            buttons: ['OK'],
-          });
 
-          await alert.present();
-        }
-      );
-  }
 
   async signIn() {
+
     const loading = await this.loadingController.create();
     await loading.present();
+    // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+    let b = (<HTMLInputElement>document.getElementById('eemail')).value;
 
     this.chatService
       .signIn(this.credentialForm.value)
       .then(
         (res) => {
           loading.dismiss();
-          this.router.navigateByUrl('/prefer', { replaceUrl: true });
+          if(b[0]==='m'){
+          this.router.navigateByUrl('/chats', { replaceUrl: true });}
+          else{
+            this.router.navigateByUrl('/prefer', { replaceUrl: true });
+            console.log(b);
+          }
         },
         async (err) => {
           loading.dismiss();

@@ -22,7 +22,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/prefer/prefer.module').then( m => m.PreferPageModule)
   },
   {
-    path: 'chat',
+    path: 'chat/:userId',
     ...canActivate(redirectUnauthorizedToLogin),
     loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   },
@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'bot',
     loadChildren: () => import('./pages/bot/bot.module').then( m => m.BotPageModule)
   },
+  {
+    path: 'chats',
+    loadChildren: () => import('./chats/chats.module').then( m => m.ChatsPageModule)
+  }
 ];
 
 @NgModule({

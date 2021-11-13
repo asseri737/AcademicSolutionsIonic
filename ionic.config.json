@@ -1,5 +1,7 @@
 {
   "name": "AcademicIo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
