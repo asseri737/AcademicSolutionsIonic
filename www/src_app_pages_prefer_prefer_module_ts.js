@@ -112,7 +112,7 @@ let PreferPage = class PreferPage {
     ngOnInit() {
     }
     toChat() {
-        this.router.navigateByUrl('/chat');
+        this.router.navigateByUrl('/chat/mohsin');
     }
     toBot() {
         this.router.navigateByUrl('/bot');
@@ -165,7 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header>\n  <ion-toolbar ccolor=\"success\">\n    <ion-title>preference</ion-title>\n    <ion-buttons slot=\"end\">\n      <ion-button fill=\"clear\" (click)=\"signOut()\">\n        <ion-icon name=\"log-out\" slot=\"icon-only\" color=\"success\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div style=\"height: 100%; display: flex; align-items: center; justify-content: center;\">\n  <ion-card (click)=\"toChat()\" >\n  \n  \n    <ion-card-content>\n      <ion-icon name=\"chatbubbles-outline\" ></ion-icon>\n\n    </ion-card-content>\n  </ion-card>\n  <ion-card (click)=\"toBot()\">\n  \n  \n    <ion-card-content>\n      <ion-icon name=\"logo-reddit\"></ion-icon>\n    <br>\n      Chat with Chatbot\n    </ion-card-content>\n  </ion-card>\n\n\n</div>\n\n\n</ion-content>\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header>\n  <ion-toolbar ccolor=\"success\">\n    <ion-title>preference</ion-title>\n    <ion-buttons slot=\"end\">\n      <ion-button fill=\"clear\" (click)=\"signOut()\">\n        <ion-icon name=\"log-out\" slot=\"icon-only\" color=\"success\"></ion-icon>\n      </ion-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n  <h1>what do you prefer?</h1>\n  <div style=\"height: 100%; display: flex; align-items: center; justify-content: center;\">\n\n\n\n  <ion-card (click)=\"toChat()\" >\n    <ion-card-content>\n      <ion-icon name=\"chatbubbles-outline\" ></ion-icon>\n      <br>\n      Chat with Academic Advisor\n    </ion-card-content>\n  </ion-card>\n\n\n\n  <ion-card (click)=\"toBot()\">\n    <ion-card-content>\n      <ion-icon name=\"logo-reddit\"></ion-icon>\n    <br>\n      Chat with Chatbot\n    </ion-card-content>\n  </ion-card>\n\n\n</div>\n\n\n</ion-content>\n");
 
 /***/ })
 

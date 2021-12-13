@@ -153,7 +153,8 @@ AppModule = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__decorate)([
         providers: [
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_10__.RouteReuseStrategy, useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__.IonicRouteStrategy }
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent],
+        schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_4__.CUSTOM_ELEMENTS_SCHEMA]
     })
 ], AppModule);
 

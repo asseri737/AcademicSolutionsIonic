@@ -508,7 +508,7 @@ let ChatService = class ChatService {
                 return usr.email;
             }
         }
-        return 'Deleted';
+        return '';
     }
 };
 ChatService.ctorParameters = () => [

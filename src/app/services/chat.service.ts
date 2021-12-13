@@ -75,5 +75,5 @@ private getUserForMsg(msgFromId, users: User[]): string {
       return usr.email;
     }
   }
-  return 'Deleted';
+  return '';
 }}

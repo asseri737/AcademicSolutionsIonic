@@ -150,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJib3QucGFnZS5zY3NzIn0= */");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("df-messenger {\n  --df-messenger-button-titlebar-color:#5df069;\n  --df-messenger-send-icon:#5df069 ;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJvdC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSw0Q0FBQTtFQUNBLGlDQUFBO0FBQ0oiLCJmaWxlIjoiYm90LnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRmLW1lc3NlbmdlcntcclxuICAgIC0tZGYtbWVzc2VuZ2VyLWJ1dHRvbi10aXRsZWJhci1jb2xvcjojNWRmMDY5O1xyXG4gICAgLS1kZi1tZXNzZW5nZXItc2VuZC1pY29uOiM1ZGYwNjlcclxufSJdfQ== */");
 
 /***/ }),
 
@@ -165,7 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-header color=\"success\">\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button (click)=\"toPrefer()\"></ion-back-button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n\n  <input ion-text type=\"text\" [(ngModel)]=\"question\">\n\n  <button ion-button (click)=\"ask(question)\">\n    Ask\n  </button>\n\n  <div>\n    {{answer}}\n  </div>\n\n</ion-content>\n");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<ion-content padding>\n  <df-messenger\n    chat-icon=\"https:&#x2F;&#x2F;www.kku.edu.sa&#x2F;sites&#x2F;default&#x2F;files&#x2F;logo_2.png\"\n    intent=\"WELCOME\"\n    chat-title=\"Khaled\"\n    agent-id=\"497f7e0b-d55a-42df-b4ef-b91f2b723a19\"\n    language-code=\"en\"\n    expand=\"false\"\n  ></df-messenger>\n</ion-content>\n");
 
 /***/ })
 
